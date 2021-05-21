@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zombie_Survival_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5RF-sh-IS8">
+                                <rect key="frame" x="0.0" y="755" width="390" height="55"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.14509803921568626" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="fCw-GY-UgF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Choice 2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXk-cx-Ooo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situation Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNA-vI-EEp">
+                                <rect key="frame" x="16" y="320.66666666666669" width="358" height="203.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="MRb-Tu-hnU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Do You Do?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olc-aH-yQ0">
+                                <rect key="frame" x="16" y="44" width="358" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Laz-fy-sRz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-ea-WzR">
+                                <rect key="frame" x="0.0" y="696" width="390" height="51"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="AkS-Yh-LG5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Choice 1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1RU-qu-3OX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.24313725489999999" green="0.22352941179999999" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5RF-sh-IS8" firstAttribute="top" secondItem="Jed-ea-WzR" secondAttribute="bottom" constant="8" id="1Gk-Uy-MEU"/>
+                            <constraint firstItem="Olc-aH-yQ0" firstAttribute="leading" secondItem="GNA-vI-EEp" secondAttribute="leading" id="4ge-gA-nlJ"/>
+                            <constraint firstItem="Olc-aH-yQ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="79T-zw-zNI"/>
+                            <constraint firstItem="5RF-sh-IS8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Fc6-2Y-ksf"/>
+                            <constraint firstItem="Olc-aH-yQ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GxR-Hj-1CJ"/>
+                            <constraint firstItem="GNA-vI-EEp" firstAttribute="leading" secondItem="Jed-ea-WzR" secondAttribute="leading" constant="16" id="Jpf-SR-zqI"/>
+                            <constraint firstItem="GNA-vI-EEp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qwd-DW-hHb"/>
+                            <constraint firstItem="Olc-aH-yQ0" firstAttribute="trailing" secondItem="GNA-vI-EEp" secondAttribute="trailing" id="VcF-nu-CLa"/>
+                            <constraint firstItem="Jed-ea-WzR" firstAttribute="leading" secondItem="5RF-sh-IS8" secondAttribute="leading" id="ZLP-uQ-FgV"/>
+                            <constraint firstItem="Jed-ea-WzR" firstAttribute="trailing" secondItem="5RF-sh-IS8" secondAttribute="trailing" id="kqN-KY-wsD"/>
+                            <constraint firstItem="Olc-aH-yQ0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="m5a-ia-oZX"/>
+                            <constraint firstItem="GNA-vI-EEp" firstAttribute="trailing" secondItem="Jed-ea-WzR" secondAttribute="trailing" constant="-16" id="o07-kT-pvm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="Jed-ea-WzR" id="AFb-8C-1H4"/>
+                        <outlet property="choice2Button" destination="5RF-sh-IS8" id="Vp0-PG-xVt"/>
+                        <outlet property="situationLabel" destination="GNA-vI-EEp" id="hQl-uB-a6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.846153846153847" y="88.151658767772503"/>
+        </scene>
+    </scenes>
+</document>
