@@ -36,4 +36,4 @@ Situation(
             choice2: "The End.", choice2Result: 0
         )
 ```
->This is a project from the iCodeLife iOS 14 Swift 5 Course, check out the full course at [www.icodelife.com/courses](https://www.icodelife.com/courses)
+>This is a project from the iCodeLife iOS 15 & Swift Course, check out the full course at [www.icodelife.com/courses](https://www.icodelife.com/courses)
